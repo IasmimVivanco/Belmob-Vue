@@ -116,9 +116,9 @@ export default {
     text-align:end;
 }
 .botao{
-     font-family: 'Jacques Francois';
+    font-family: 'Jacques Francois';
     font-size: 20px;
-     color: white;
+    color: white;
 }
 .btn-primary{
     background-color: #562551;

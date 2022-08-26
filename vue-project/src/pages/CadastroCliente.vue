@@ -68,7 +68,7 @@
                     <input type="password" class="form-control" id="senhareply">
                 </div>
             </div>
-            <button @click="cadastrar()" type="button" class="btn btn-primary btn-lg">Finalizar</button>
+            <button @click="cadastrar(), Id++" type="button" class="btn btn-primary btn-lg">Finalizar</button>
         </div>
     </body>
 </template>
@@ -76,6 +76,7 @@
 export default {
     data() {
         return {
+            Id: 0,
             nome: null,
             sobrenome: null,
             genero: null,
@@ -95,8 +96,10 @@ export default {
         }
     },
     methods: {
+
         cadastrar: function(){
             var cadastroUsuario = {
+            Id: this.Id,    
             nome: this.nome,
             sobrenome: this.sobrenome,
             genero: this.genero,
